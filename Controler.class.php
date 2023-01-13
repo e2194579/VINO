@@ -37,16 +37,32 @@ class Controler
 				case 'boireBouteilleCellier':
 					$this->boireBouteilleCellier();
 					break;
+				
+				case 'login':
+					$this->login();
+					break;
+
+
 				default:
 					$this->accueil();
 					break;
 			}
 		}
 
+		private function login()
+		{
+			include("vues/entete.php");
+			include("vues/login.php");
+			include("vues/pied.php");
+                  
+		}
+
+
 		private function accueil()
 		{
 			$bte = new Bouteille();
             $data = $bte->getListeBouteilleCellier();
+			/* var_dump($data); */
 			include("vues/entete.php");
 			include("vues/cellier.php");
 			include("vues/pied.php");

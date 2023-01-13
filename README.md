@@ -1,5 +1,3 @@
-# VINO
-
 # vino
 Projet en cours de développement par les étudiants des groupes de Projet Web 2.
 
@@ -23,6 +21,3 @@ Script PHP qui permet d'aller récupérer des données du site de la SAQ (pour d
 - Tester
 
 Bingo.
-
-
-Test.
